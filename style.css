@@ -24,6 +24,7 @@ div img{
     max-width: 992px;
     margin: auto;
     width: 100%;
+    min-width: 320px;
 }
 
 header{
@@ -54,10 +55,6 @@ header .menu{
     height: 100vh;
     align-items: center;
     justify-content: space-between;
-}
-
-.apresentação .texto-apresentação{
-    min-height: 200px;
 }
 
 .texto-apresentação h1{
@@ -239,7 +236,48 @@ footer{
     align-items: center;   
 }
 
+/*mobile*/
+
 footer .footer{
     justify-content: space-between;
     color: #fff;
+}
+
+@media(max-width: 992px){
+    .flex-container{
+        flex-direction: column;
+    }
+    .apresentação{
+        flex-direction: column-reverse;
+    }
+    .apresentação .texto-apresentação{
+        width: 100%;
+    }
+    #quem-somos{
+        flex-direction: column-reverse;
+    }
+
+    #quem-somos img{
+        min-width: 320px;
+        margin: auto;
+    }
+
+    .list-serviços{
+        flex-direction: column;
+    }
+    .item-serviço img{
+        width: 50%;
+        margin: auto;
+    }
+    .list-planos{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+    .list-planos .item-plano{
+        max-width: 90%;
+        margin:auto;
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
