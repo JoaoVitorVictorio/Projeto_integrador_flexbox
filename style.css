@@ -43,6 +43,10 @@ header .list-items{
     align-items: center;
 }
 
+.list-items a:hover{
+    color: #f88e44;
+}
+
 .list-items li a{
     color: #fff;
 }
